@@ -59,12 +59,12 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
     cdk --profile admin-us-east-1 bootstrap
     ...
     [15:04:22] Stack CDKToolkit has completed updating
-    ✅  Environment aws://223088417222/us-east-1 bootstrapped.
+    ✅  Environment aws://XXXX/us-east-1 bootstrapped.
 
     cdk --profile admin-us-west-1 bootstrap
     ...
     [15:06:10] CDKToolkit: skipping deployment (use --force to override)
-    ✅  Environment aws://223088417222/us-west-1 bootstrapped (no changes).
+    ✅  Environment aws://XXXX/us-west-1 bootstrapped (no changes).
     ```
 
     The privileges needed for bootstrap exceed 'PowerUser'. To get this step to work, I used the Administrator role with AdministratorAccess Policy.
@@ -136,7 +136,7 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
     ✨  Deployment time: 30.88s
 
     Stack ARN:
-    arn:aws:cloudformation:us-east-1:223088417222:stack/MyEastCdkStack/f96d3730-0b57-11f0-aa31-0e0abc6004d9
+    arn:aws:cloudformation:us-east-1:XXXX:stack/MyEastCdkStack/f96d3730-0b57-11f0-aa31-0e0abc6004d9
 
     ✨  Total time: 37.02s
     ```
@@ -147,9 +147,9 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
 
     ```bash
     aws s3 ls
-    2025-03-27 15:03:49 cdk-hnb659fds-assets-223088417222-us-east-1
-    2025-03-27 15:03:46 cdk-hnb659fds-assets-223088417222-us-west-1
-    2025-03-26 16:38:15 cdk-hnb659fds-assets-223088417222-us-west-2
+    2025-03-27 15:03:49 cdk-hnb659fds-assets-XXXX-us-east-1
+    2025-03-27 15:03:46 cdk-hnb659fds-assets-XXXX-us-west-1
+    2025-03-26 16:38:15 cdk-hnb659fds-assets-XXXX-us-west-2
     2025-03-27 15:08:25 myeastcdkstack-mynewbucket15ca675a-eyqstmi0zjmo
     ```
 
@@ -176,7 +176,7 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
     ✨  Deployment time: 27.08s
 
     Stack ARN:
-    arn:aws:cloudformation:us-west-1:223088417222:stack/MyWestCdkStack/fbfcf7e0-0b59-11f0-8712-067194afe31d
+    arn:aws:cloudformation:us-west-1:XXXX:stack/MyWestCdkStack/fbfcf7e0-0b59-11f0-8712-067194afe31d
 
     ✨  Total time: 33.43s
     ```
@@ -187,9 +187,9 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
 
     ```bash
     aws s3 ls
-    2025-03-27 15:03:49 cdk-hnb659fds-assets-223088417222-us-east-1
-    2025-03-27 15:03:46 cdk-hnb659fds-assets-223088417222-us-west-1
-    2025-03-26 16:38:15 cdk-hnb659fds-assets-223088417222-us-west-2
+    2025-03-27 15:03:49 cdk-hnb659fds-assets-XXXX-us-east-1
+    2025-03-27 15:03:46 cdk-hnb659fds-assets-XXXX-us-west-1
+    2025-03-26 16:38:15 cdk-hnb659fds-assets-XXXX-us-west-2
     2025-03-27 15:08:25 myeastcdkstack-mynewbucket15ca675a-eyqstmi0zjmo
     2025-03-27 15:22:47 mywestcdkstack-mynewbucket15ca675a-ti2uqdiqgykw
     ```
@@ -228,7 +228,7 @@ You can create an AWS Cloud Development Kit (AWS CDK) application containing mul
 
     ```bash
         aws s3 ls
-        2025-03-27 15:03:49 cdk-hnb659fds-assets-223088417222-us-east-1
-        2025-03-27 15:03:46 cdk-hnb659fds-assets-223088417222-us-west-1
-        2025-03-26 16:38:15 cdk-hnb659fds-assets-223088417222-us-west-2
+        2025-03-27 15:03:49 cdk-hnb659fds-assets-XXXX-us-east-1
+        2025-03-27 15:03:46 cdk-hnb659fds-assets-XXXX-us-west-1
+        2025-03-26 16:38:15 cdk-hnb659fds-assets-XXXX-us-west-2
     ```
